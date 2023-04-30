@@ -7,16 +7,21 @@ import { FaPhone } from 'react-icons/fa';
 import Loader from './Loader';
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaUserLock } from "react-icons/fa";
+import CountUp from'react-countup';
+import ScrollTigger from 'react-scroll-trigger'
 
 
 
 function Home(){
 const [isLoading, setIsLoading] = useState(true);
+const [counteOn,setCounterOn]=useState(false)
+
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
+  
   }, []);
 return(
  <>
@@ -47,9 +52,42 @@ return(
   </div>
   
 </div>
-<div className='register'>
-       
+<div className='course'>
+
 </div>
+<ScrollTigger onEnter={()=>setCounterOn(true)} onExit={()=>setCounterOn(false)}>
+  <div className='count'>
+     <div className='count-in'>
+      <h3>
+     {counteOn &&  <CountUp start={0} end={493} duration={2} delay={0}/>}
+       + <br/>
+     </h3>
+     <p> Registered Student</p>
+     </div>
+     <div className='count-in'>
+      <h3>
+     {counteOn &&  <CountUp start={0} end={76} duration={2} delay={0}/>}
+       + <br/>
+     </h3>
+     <p> Available Tutors</p>
+     </div>
+     <div className='count-in'>
+      <h3>
+     {counteOn &&  <CountUp start={0} end={2763} duration={2} delay={0}/>}
+       + <br/>
+     </h3>
+     <p> Hours Studied</p>
+     </div>
+     <div className='count-in'>
+      <h3>
+     {counteOn &&  <CountUp start={0} end={5} duration={2} delay={1}/>}
+       + <br/>
+     </h3>
+     <p> Countries Served</p>
+     </div>
+     
+</div>
+</ScrollTigger>
         </>
       )}
    

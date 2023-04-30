@@ -44,7 +44,7 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
-  word-spacing: 15px;
+  word-spacing: 10px;
 }
 h1 span {
   color: cyan;
@@ -104,8 +104,23 @@ p {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.register {
-  height: 40vh;
+.count {
+  background: #013220;
+  display: flex;
+  justify-content: space-around;
+}
+.count-in {
+  padding: 10px 20px;
+  background: #d89f55;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.count-in:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+.course {
+  height: 100vh;
   background: #013220;
 }
 .btn {
@@ -154,5 +169,13 @@ p {
   .floating-icon {
     bottom: 10px;
     right: 10px;
+  }
+  .count {
+    flex-direction: column;
+  }
+  .count-in {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
   }
 }
