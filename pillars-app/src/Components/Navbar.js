@@ -9,7 +9,7 @@ function Navbar(){
     const [mobile,setMobile]=useState(false)
  return(
     <>
-     <nav className='navbar' style={{zIndex: 1}}>
+     <nav className='navbar' >
         {/* <div className='container'> */}
         <img className='logo' src={logo}></img>
         <ul  className={mobile? "nav-links-mobile":"nav-links"} onClick={()=>setMobile(false)}>

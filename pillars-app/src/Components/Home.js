@@ -5,6 +5,10 @@ import'../App.css'
 import myImage from '../images/img.jpg'
 import { FaPhone } from 'react-icons/fa';
 import Loader from './Loader';
+import { FaArrowCircleRight } from "react-icons/fa";
+import { FaUserLock } from "react-icons/fa";
+
+
 
 function Home(){
 const [isLoading, setIsLoading] = useState(true);
@@ -34,10 +38,17 @@ return(
     <hr className='my-hr'/>
     <p>BESPOKE ONE TO ONE LESSONS WITH HIGHLY EXPERIENCED AND QUALIFIED TUTORS IN</p>
     <p>TAJWEED, RECITATION, HIFZ, AND ISLAMIC STUDIES.</p>
+
+    <div className='btn'>
+      <button>Register <FaUserLock/></button>
+      <button>Learn More <FaArrowCircleRight/> </button>
+    </div>
+    
   </div>
+  
 </div>
 <div className='register'>
-
+       
 </div>
         </>
       )}
