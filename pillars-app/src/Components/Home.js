@@ -26,7 +26,7 @@ return(
         <>
         <div className="floating-icon">
     <a href='https://wa.me/447756393994'>
-      <FaPhone size={30} />
+      <FaPhone size={25} />
 
     </a>
     </div>
