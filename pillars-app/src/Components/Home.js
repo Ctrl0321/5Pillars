@@ -15,7 +15,18 @@ import{Parallax} from 'react-parallax'
 
 function Home(){
 const [isLoading, setIsLoading] = useState(true);
-const [counteOn,setCounterOn]=useState(false)
+const [counteOn,setCounterOn]=useState(false);
+ const [showSlideBar, setShowSlideBar] = useState(false);
+
+
+ function handleMouseEnter() {
+    setShowSlideBar(true);
+  }
+
+  function handleMouseLeave() {
+    setShowSlideBar(false);
+  }
+
 
 
   useEffect(() => {
@@ -30,14 +41,17 @@ return(
         <Loader />
       ) : (
         <>
-        <div className="floating-icon">
+        <div className="floating-icon" onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}>
     <a href='https://wa.me/447756393994'>
       <FaPhone size={25} />
-
     </a>
+      <div className={`slide-bar ${showSlideBar ? "show" : ""}`}>
+        <p>+44 7756 393994</p>
+      </div>
     </div>
 <Navbar/>
-<Parallax strength={-600} bgImage={myImage}>
+<Parallax strength={-600} bgImage={myImage} >
   <div className="image-container" style={{height: "100vh", width: "100%"}}>
     <div className="overlay">
       <h1>EARN THE QURAN <span>ONLINE </span></h1>

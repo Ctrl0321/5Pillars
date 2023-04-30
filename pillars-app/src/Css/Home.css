@@ -115,6 +115,9 @@ p {
   border-radius: 20px;
   border: 1px solid black;
 }
+.count-in h3 {
+  font-size: 26px;
+}
 .count-in:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-4px);
@@ -156,6 +159,33 @@ p {
   color: #d89f55;
 }
 
+.slide-bar {
+  position: absolute;
+  top: 0;
+  font-size: 0;
+  font-weight: 600;
+  right: 6px;
+  width: 0px;
+  height: 50px;
+  background-color: #d89f55;
+  color: #013220;
+  text-align: center;
+  line-height: 50px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 15px;
+  /* display: none; */
+}
+
+.slide-bar.show {
+  width: 170px;
+  right: 50px;
+  margin-right: 1em;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 15px;
+  /* display: block; */
+}
+
 @media (max-width: 768px) {
   .btn button {
     margin: 2rem;
@@ -178,4 +208,12 @@ p {
     margin: 5px;
     text-align: center;
   }
+  .slide-bar {
+    display: none;
+  }
 }
+/* @media screen and (max-width: 768px) {
+  .image-container {
+    width: 50%;
+  }
+} */
