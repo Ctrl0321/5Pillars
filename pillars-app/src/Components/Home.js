@@ -2,13 +2,14 @@ import React, { useState,useEffect } from 'react';
 import Navbar from './Navbar';
 import '../Css/Home.css';
 import'../App.css'
-import myImage from '../images/img.jpg'
+import myImage from '../images/img3.jpg'
 import { FaPhone } from 'react-icons/fa';
 import Loader from './Loader';
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaUserLock } from "react-icons/fa";
 import CountUp from'react-countup';
 import ScrollTigger from 'react-scroll-trigger'
+import{Parallax} from 'react-parallax'
 
 
 
@@ -36,7 +37,8 @@ return(
     </a>
     </div>
 <Navbar/>
-<div className="image-container">
+<Parallax strength={-600} bgImage={myImage}>
+  <div className="image-container">
   <div className="overlay">
     <h1>EARN THE QURAN <span>ONLINE </span></h1>
     <h1> ANYWHERE, ANYTIME</h1>
@@ -52,6 +54,7 @@ return(
   </div>
   
 </div>
+</Parallax>
 <div className='course'>
 
 </div>
