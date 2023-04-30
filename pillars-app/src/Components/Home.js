@@ -38,22 +38,20 @@ return(
     </div>
 <Navbar/>
 <Parallax strength={-600} bgImage={myImage}>
-  <div className="image-container">
-  <div className="overlay">
-    <h1>EARN THE QURAN <span>ONLINE </span></h1>
-    <h1> ANYWHERE, ANYTIME</h1>
-    <hr className='my-hr'/>
-    <p>BESPOKE ONE TO ONE LESSONS WITH HIGHLY EXPERIENCED AND QUALIFIED TUTORS IN</p>
-    <p>TAJWEED, RECITATION, HIFZ, AND ISLAMIC STUDIES.</p>
+  <div className="image-container" style={{height: "100vh", width: "100%"}}>
+    <div className="overlay">
+      <h1>EARN THE QURAN <span>ONLINE </span></h1>
+      <h1> ANYWHERE, ANYTIME</h1>
+      <hr className='my-hr'/>
+      <p>BESPOKE ONE TO ONE LESSONS WITH HIGHLY EXPERIENCED AND QUALIFIED TUTORS IN</p>
+      <p>TAJWEED, RECITATION, HIFZ, AND ISLAMIC STUDIES.</p>
 
-    <div className='btn'>
-      <button>Register <FaUserLock/></button>
-      <button>Learn More <FaArrowCircleRight/> </button>
+      <div className='btn'>
+        <button>Register <FaUserLock/></button>
+        <button>Learn More <FaArrowCircleRight/> </button>
+      </div>
     </div>
-    
   </div>
-  
-</div>
 </Parallax>
 <div className='course'>
 
