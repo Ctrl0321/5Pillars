@@ -10,7 +10,7 @@
   width: 20rem;
   height: auto;
   position: relative;
-  background: white;
+  background: #013220;
   border-radius: 15px;
   /* text-align: center; */
 }
@@ -40,7 +40,7 @@
 
 .header img {
   z-index: -1;
-  padding: 0.5em;
+  /* padding: 0.5em; */
   max-width: 100%;
   border-radius: 15px;
   height: 18em;
@@ -76,7 +76,7 @@
   .text p {
     display: block;
     position: relative;
-    color: #171717;
+    color: white;
     margin-top: 4em;
     font-size: 15px;
   }

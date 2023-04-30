@@ -71,30 +71,7 @@ return(
     </div>
   </div>
 </Parallax>
-<div className='course'>
-  <div className='row'>
-     <Card
-photo={quranRes}
-heading="Quran Recitation"
-body="We have highly qualified tutors who can deliver lessons in Qaida and Quran recitation, working with you to achieve your goals.
 
-"/>
-   <Card
-photo={quranLes}
-heading="Hifdh Lessons"
-body="Our Hifdh program is ideal for students who wish to memorise the Quran and our Selected Surahs program is for anyone who wants to memorise the important and often recited surahs.
-
-"/>
-   <Card
-photo={IslamicLes}
-overlayer="giiiii"
-heading="Islamic Lessons"
-body="Our comprehensive curriculum covers areas such as Hadith, Fiqh, Seerah & Islamic History, Aqeedah and contemporary issues.
-
-"/>
-  </div>
-
-</div>
 <ScrollTigger onEnter={()=>setCounterOn(true)} onExit={()=>setCounterOn(false)}>
   <div className='count'>
      <div className='count-in'>
@@ -128,6 +105,32 @@ body="Our comprehensive curriculum covers areas such as Hadith, Fiqh, Seerah & I
      
 </div>
 </ScrollTigger>
+
+
+<div className='course'>
+  <div className='row'>
+     <Card
+photo={quranRes}
+heading="Quran Recitation"
+body="We have highly qualified tutors who can deliver lessons in Qaida and Quran recitation, working with you to achieve your goals.
+
+"/>
+   <Card
+photo={quranLes}
+heading="Hifdh Lessons"
+body="Our Hifdh program is ideal for students who wish to memorise the Quran and our Selected Surahs program is for anyone who wants to memorise the important and often recited surahs.
+
+"/>
+   <Card
+photo={IslamicLes}
+overlayer="giiiii"
+heading="Islamic Lessons"
+body="Our comprehensive curriculum covers areas such as Hadith, Fiqh, Seerah & Islamic History, Aqeedah and contemporary issues.
+
+"/>
+  </div>
+
+</div>
 
         </>
       )}

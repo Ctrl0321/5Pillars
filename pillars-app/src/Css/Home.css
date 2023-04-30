@@ -109,16 +109,14 @@ p {
 }
 
 .count {
-  background: #013220;
+  background: #d89f55;
   display: flex;
   justify-content: space-around;
 }
 .count-in {
   padding: 10px 20px;
   background: #d89f55;
-  border-radius: 20px;
-  border: 1px solid black;
-  margin-top: 2em;
+  margin: 2em 0;
 }
 .count-in h3 {
   font-size: 26px;
@@ -129,7 +127,7 @@ p {
 }
 .course {
   height: 80vh;
-  background: #013220;
+  background: white;
   padding: 2em;
 }
 .row {
@@ -214,9 +212,12 @@ p {
     right: 10px;
   }
   .count {
+    background: white;
     flex-direction: column;
   }
   .count-in {
+    border-radius: 20px;
+    border: 1px solid black;
     padding: 10px;
     margin: 5px;
     text-align: center;
