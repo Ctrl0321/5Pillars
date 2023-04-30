@@ -114,6 +114,7 @@ p {
   background: #d89f55;
   border-radius: 20px;
   border: 1px solid black;
+  margin-top: 2em;
 }
 .count-in h3 {
   font-size: 26px;
@@ -123,8 +124,13 @@ p {
   transform: translateY(-4px);
 }
 .course {
-  height: 100vh;
+  height: 80vh;
   background: #013220;
+  padding: 2em;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
 }
 .btn {
   display: flex;
@@ -211,9 +217,27 @@ p {
   .slide-bar {
     display: none;
   }
+  .course {
+    height: auto;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* @media screen and (max-width: 768px) {
   .image-container {
     width: 50%;
   }
 } */
+@media (max-width: 1064px) {
+  .course {
+    height: auto;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

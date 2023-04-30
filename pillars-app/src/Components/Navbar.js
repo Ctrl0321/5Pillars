@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect,useRef } from 'react';
 import { Link,BrowserRouter as Router,Switch,Route } from 'react-router-dom';
 import '../App.css';
 import{FaBars} from 'react-icons/fa'
@@ -7,9 +7,28 @@ import logo from '../images/Logo-1.png'
 
 function Navbar(){
     const [mobile,setMobile]=useState(false)
+
+    const navRef = useRef(null);
+
+//   useEffect(() => {
+//     // Add event listener to detect clicks outside of the nav menu
+//     function handleClickOutsideNav(event) {
+//       if (navRef.current && !navRef.current.contains(event.target)) {
+//         setMobile(false);
+//       }
+//     }
+
+//     // Attach the event listener
+//     window.addEventListener("click", handleClickOutsideNav);
+
+//     // Clean up the event listener when the component unmounts
+//     return () => {
+//       window.removeEventListener("click", handleClickOutsideNav);
+//     };
+//   }, []);
  return(
     <>
-     <nav className='navbar' >
+     <nav className='navbar' ref={navRef}>
         {/* <div className='container'> */}
         <img className='logo' src={logo}></img>
         <ul  className={mobile? "nav-links-mobile":"nav-links"} onClick={()=>setMobile(false)}>
