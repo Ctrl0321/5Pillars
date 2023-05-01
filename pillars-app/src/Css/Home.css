@@ -62,6 +62,17 @@ p {
   background-color: #fff;
   border: none;
 }
+.course-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.course-head button {
+  cursor: pointer;
+}
+.course-head button:hover {
+  transform: translateY(-5px);
+}
 
 @media (max-width: 768px) {
   .image-container {
@@ -248,4 +259,7 @@ p {
     justify-content: center;
     align-items: center;
   }
+}
+.arrow svg {
+  color: #d89f55;
 }

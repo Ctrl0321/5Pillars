@@ -1,5 +1,5 @@
-import React, { useState,useEffect,useRef } from 'react';
-import { Link,BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import React, { useState,useRef } from 'react';
+import { Link,BrowserRouter as Router} from 'react-router-dom';
 import '../App.css';
 import{FaBars} from 'react-icons/fa'
 import{ImCross} from 'react-icons/im'

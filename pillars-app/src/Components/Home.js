@@ -10,17 +10,20 @@ import { FaUserLock } from "react-icons/fa";
 import CountUp from'react-countup';
 import ScrollTigger from 'react-scroll-trigger'
 import{Parallax} from 'react-parallax';
-import Card from './Card';
 import quranRes from'../images/QurRec.jpg'
 import quranLes from'../images/QurLes.png'
 import IslamicLes from'../images/IslamicLes.jpg'
+import CourseDetails from './CourseDetails';
+import{FaArrowAltCircleDown} from 'react-icons/fa'
+import{FaArrowAltCircleUp} from 'react-icons/fa'
 
 
 
 function Home(){
 const [isLoading, setIsLoading] = useState(true);
 const [counteOn,setCounterOn]=useState(false);
- const [showSlideBar, setShowSlideBar] = useState(false);
+const [showSlideBar, setShowSlideBar] = useState(false);
+const [showDetails, setShowDetails] = useState(false);
 
 
  function handleMouseEnter() {
@@ -29,6 +32,10 @@ const [counteOn,setCounterOn]=useState(false);
 
   function handleMouseLeave() {
     setShowSlideBar(false);
+  }
+
+   function toggleDetails() {
+    setShowDetails(!showDetails);
   }
 
 
@@ -106,31 +113,38 @@ return(
 </div>
 </ScrollTigger>
 
-
-<div className='course'>
-  <div className='row'>
-     <Card
-photo={quranRes}
-heading="Quran Recitation"
-body="We have highly qualified tutors who can deliver lessons in Qaida and Quran recitation, working with you to achieve your goals.
-
-"/>
-   <Card
-photo={quranLes}
-heading="Hifdh Lessons"
-body="Our Hifdh program is ideal for students who wish to memorise the Quran and our Selected Surahs program is for anyone who wants to memorise the important and often recited surahs.
-
-"/>
-   <Card
-photo={IslamicLes}
-overlayer="giiiii"
-heading="Islamic Lessons"
-body="Our comprehensive curriculum covers areas such as Hadith, Fiqh, Seerah & Islamic History, Aqeedah and contemporary issues.
-
-"/>
-  </div>
-
-</div>
+ <div className='course'>
+     <div className='course-head'>
+      <button className="arrow" onClick={toggleDetails}>
+            {showDetails? <FaArrowAltCircleUp size={35}/>:<FaArrowAltCircleDown size={35}/>}
+           
+        </button>
+     </div>
+      <div className='row'>
+      
+        {/* <button onClick={toggleDetails}>{showDetails ? 'Hide Details' : 'Show Details'}</button> */}
+        {showDetails && (
+          <>
+            <CourseDetails
+              imageSrc={quranRes}
+              heading="Quran Recitation"
+              text="We have highly qualified tutors who can deliver lessons in Qaida and Quran recitation, working with you to achieve your goals."
+            />
+            <CourseDetails
+              imageSrc={quranLes}
+              heading="Hifdh Lessons"
+              text="Our Hifdh program is ideal for students who wish to memorise the Quran and our Selected Surahs program is for anyone who wants to memorise the important and often recited surahs."
+            />
+            <CourseDetails
+              imageSrc={IslamicLes}
+              heading="Islamic Lessons"
+              text="Our comprehensive curriculum covers areas such as Hadith, Fiqh, Seerah & Islamic History, Aqeedah and contemporary issues."
+              isComingSoon
+            />
+          </>
+        )}
+      </div>
+    </div>
 
         </>
       )}

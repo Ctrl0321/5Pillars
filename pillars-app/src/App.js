@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import { Link,BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
 import Home from './Components/Home';
-import Navbar from './Components/Navbar';
-
 
 
 function App() {
