@@ -90,21 +90,21 @@ return(
      </div>
      <div className='count-in'>
       <h3>
-     {counteOn &&  <CountUp start={0} end={76} duration={2} delay={0}/>}
+     {counteOn &&  <CountUp start={0} end={76} duration={2} delay={2}/>}
        + <br/>
      </h3>
      <p> Available Tutors</p>
      </div>
      <div className='count-in'>
       <h3>
-     {counteOn &&  <CountUp start={0} end={2763} duration={2} delay={0}/>}
+     {counteOn &&  <CountUp start={0} end={2763} duration={2} delay={1}/>}
        + <br/>
      </h3>
      <p> Hours Studied</p>
      </div>
      <div className='count-in'>
       <h3>
-     {counteOn &&  <CountUp start={0} end={5} duration={2} delay={1}/>}
+     {counteOn &&  <CountUp start={0} end={5} duration={2} delay={3}/>}
        + <br/>
      </h3>
      <p> Countries Served</p>
@@ -115,6 +115,8 @@ return(
 
  <div className='course'>
      <div className='course-head'>
+      <h2>5 Pillars Academy is an ideal online solution for learning the Quran & enhancing your Islamic knowledge</h2>
+      <h4>We cater to individuals of all ages and levels of learning, and our solution is tailored to meet the specific needs and pace of each student.</h4>
       <button className="arrow" onClick={toggleDetails}>
             {showDetails? <FaArrowAltCircleUp size={35}/>:<FaArrowAltCircleDown size={35}/>}
            

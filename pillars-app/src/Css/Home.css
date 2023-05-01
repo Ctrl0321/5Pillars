@@ -66,6 +66,13 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+}
+.course-head h2 {
+  color: #013220;
+}
+.course-head h4 {
+  margin: 1em 0;
 }
 .course-head button {
   cursor: pointer;
