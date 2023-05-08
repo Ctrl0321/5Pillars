@@ -144,7 +144,7 @@ p {
   transform: translateY(-4px);
 }
 .course {
-  height: 80vh;
+  height: auto;
   background: white;
   padding: 2em;
 }
@@ -269,4 +269,36 @@ p {
 }
 .arrow svg {
   color: #d89f55;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake-animation {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.aboutUs {
+  height: 50vh;
+  background: #013220;
 }
