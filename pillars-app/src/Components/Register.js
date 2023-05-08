@@ -253,7 +253,11 @@ const Register = () => {
                   I agree to the terms and conditions
                 </label>
                 {errors.agree && <span className="error">{errors.agree}</span>}
-                <Link to="/condition" style={{ textDecoration: "none" }}>
+                <Link
+                  to="/condition"
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
+                >
                   <li>Terms & Conditions</li>
                 </Link>
               </div>
