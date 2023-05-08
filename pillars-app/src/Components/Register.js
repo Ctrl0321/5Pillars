@@ -1,4 +1,5 @@
 import React, { Component, useState, useEffect } from "react";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Loader from "./Loader";
@@ -252,6 +253,9 @@ const Register = () => {
                   I agree to the terms and conditions
                 </label>
                 {errors.agree && <span className="error">{errors.agree}</span>}
+                <Link to="/condition" style={{ textDecoration: "none" }}>
+                  <li>Terms & Conditions</li>
+                </Link>
               </div>
               <button type="submit">Submit</button>
             </form>
