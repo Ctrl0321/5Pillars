@@ -15,21 +15,21 @@ const Footer = () => {
           <div className="first-head">
             <p>5 Pillars Academy</p>
             <div className="lnk">
-              <a>
+              <a href="https://instagram.com/5pillars.academy?igshid=NTc4MTIwNjQ2YQ==">
                 <FaInstagram size={25} />
               </a>
               <p>Insta: 5pillars.Academy</p>
             </div>
 
             <div className="lnk">
-              <a>
+              <a href="https://www.facebook.com/profile.php?id=100090319573405&mibextid=ZbWKwL">
                 <FaFacebook size={25} />
               </a>
               <p>Facebook: 5pillars.Academy</p>
             </div>
 
             <div className="lnk">
-              <a>
+              <a href="https://youtube.com/@5pillars.Academy">
                 <FaYoutube size={25} />
               </a>
               <p> Youtube: 5pillars.Academy</p>
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
 
             <div className="lnk">
-              <a href="https://wa.me/447756393994">
+              <a href="mailto:example@mail.com">
                 <SiGmail size={25} />
               </a>
               <p> info@5pillarsacademy.com</p>

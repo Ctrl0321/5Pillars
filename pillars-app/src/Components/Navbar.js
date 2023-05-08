@@ -44,7 +44,7 @@ function Navbar() {
           <Link to="/" style={{ textDecoration: "none" }}>
             <li>About</li>
           </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/register" style={{ textDecoration: "none" }}>
             <li>Register</li>
           </Link>
         </ul>

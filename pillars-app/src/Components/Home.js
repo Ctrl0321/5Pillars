@@ -51,11 +51,13 @@ function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
   }, []);
+
   return (
     <>
       {isLoading ? (
