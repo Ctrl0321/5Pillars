@@ -22,11 +22,11 @@
   height: 10vh;
 }
 
-h1 {
+.terms-container h1 {
   color: #333;
 }
 
-p {
+.section-content p {
   color: #666;
   line-height: 1.6;
 }
